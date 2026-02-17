@@ -749,8 +749,61 @@ ol, ul {
   background-color: #1c4b9b;
 }
 
-.tabcontent {
-  padding-top: 10px;
+#quests-content > div {
+  padding: 24px 20px 32px;
   display: none;
+  border: 1px solid rgba(203, 212, 255, 0.15);
   border-top: none;
+  background: rgba(6, 16, 33, 0.6);
+  text-align: left;
+  line-height: 1.6;
+}
+
+#quests-content p {
+  margin: 0;
+}
+
+#quests-content b {
+  font-weight: 600;
+  color: #d4dcf0;
+  letter-spacing: 0.01em;
+}
+
+#quests-content i {
+  font-style: italic;
+  color: #b8c4e0;
+  opacity: 0.95;
+}
+
+#quests-content b + ul {
+  margin-top: 0.4em;
+}
+
+#quests-content ul {
+  margin: 0.5em 0 1.25em;
+  padding: 0 0 0 1.5em;
+  list-style: none;
+  max-width: 48em;
+}
+
+#quests-content ul li {
+  position: relative;
+  padding: 0.35em 0 0.35em 1.25em;
+  margin: 0;
+  color: #e0e6f0;
+  line-height: 1.5;
+  padding-left: 1.5em;
+  margin-left: -0.25em;
+}
+
+#quests-content ul li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.95em;
+  width: 6px;
+  height: 6px;
+  background: rgba(45, 140, 248, 0.7);
+  border-radius: 50%;
+  box-shadow: 0 0 0 2px rgba(45, 140, 248, 0.2);
 }/*# sourceMappingURL=main.css.map */
