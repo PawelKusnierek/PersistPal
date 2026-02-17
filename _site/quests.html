@@ -16,7 +16,7 @@
     
 
     <!-- JavaScript -->
-    <script src="scripts/quests.js"></script>
+    
     <script src=/scripts/onload.js></script>
 
     <!-- Extra GoogleAPI fonts -->
@@ -89,9 +89,32 @@
     <button class="nav-toggle" onclick="toggleNavigation()" style="display: none;">☰ Menu</button>
     
     <section id="main-content">
-    <p>TBD</p>
+    <p id="equipment_info">
+    <span style="color: purple"><b>PURPOSE:</b></span> Complete Weekly Deliveries item list with approximate Market Value.<br><br> The '<b>Market Values</b>' will never be 100% accurate and <b>WILL VARY BETWEEN WORLDS</b>, use as an approximation only.<br><br>
+    <span style="color: red"><b>Very High</b></span> & <span style="color: orange"><b>High</b></span> value items should <b>always</b> be sold on the market.<br>
+    <span style="color: yellow"><b>Medium</b></span> items should be sold on the market, but usually only for a little bit more than the NPC price.<br>
+    <span style="color: green"><b>Low</b></span> value items can generally be <b>safely sold to NPCs</b>, unless the supply is really low on your server.<br><br>
 
+    
+</p>
+<div class="quests_tab">
+    <button id="NPCs" class="tablinks active" onclick="show_tab(event, 'NPCs')">Quest NPCs & Availability</button>
+    <button id="SpoilersTab" class="tablinks" onclick="show_tab(event, 'SpoilersTab')">Tips & Spoilers</button>
+</div>
 
+<!-- Tab content -->
+<div id="NPCs" class="tabcontent"><p>123123123</p>
+<table id="deliveries_table_everything" class="deliveries_table">
+        <tr>
+            <th>Icon</th>
+            <th>Name</th>
+            <th>NPC Price</th>
+            <th>Market Value</th>
+        </tr>
+</div>
+
+<div id="SpoilersTab" class="tabcontent">asdasdasd
+</div>
     </section>
 
 
