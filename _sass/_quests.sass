@@ -9,7 +9,7 @@
     cursor: pointer
     padding: 14px 16px
     transition: 0.3s
-    width: 33.33%
+    width: 50%
     color: #ccc
     font-size: 14px
     font-weight: bold
@@ -58,7 +58,6 @@
     margin: 0.5em 0 1.25em
     padding: 0 0 0 1.5em
     list-style: none
-    max-width: 48em
 
 #quests-content ul li
     position: relative
@@ -79,4 +78,61 @@
     background: rgba(45, 140, 248, 0.7)
     border-radius: 50%
     box-shadow: 0 0 0 2px rgba(45, 140, 248, 0.2)
+
+// ============================================
+// Tips & Spoilers tab – expandable quest spoilers
+// ============================================
+
+#quests-content .quest-spoilers-intro
+    margin-bottom: 1.25em
+    color: #b8c4e0
+    font-size: 0.95em
+
+#quests-content .quest-spoiler
+    margin-bottom: 0.5em
+    border: 1px solid rgba(203, 212, 255, 0.2)
+    border-radius: 6px
+    background: rgba(12, 28, 56, 0.5)
+    overflow: hidden
+
+#quests-content .quest-spoiler[open]
+    border-color: rgba(45, 140, 248, 0.4)
+    box-shadow: 0 0 0 1px rgba(45, 140, 248, 0.15)
+
+#quests-content .quest-spoiler summary
+    padding: 12px 16px
+    cursor: pointer
+    font-weight: 600
+    color: #d4dcf0
+    list-style: none
+    user-select: none
+    transition: background-color 0.2s ease, color 0.2s ease
+
+#quests-content .quest-spoiler summary::-webkit-details-marker
+    display: none
+
+#quests-content .quest-spoiler summary::before
+    content: "▶"
+    display: inline-block
+    margin-right: 10px
+    font-size: 0.75em
+    color: rgba(45, 140, 248, 0.9)
+    transition: transform 0.2s ease
+
+#quests-content .quest-spoiler[open] summary::before
+    transform: rotate(90deg)
+
+#quests-content .quest-spoiler summary:hover
+    background-color: rgba(28, 75, 155, 0.3)
+    color: #e8ecf8
+
+#quests-content .quest-spoiler__body
+    padding: 14px 16px 16px 42px
+    border-top: 1px solid rgba(203, 212, 255, 0.1)
+
+#quests-content .quest-spoiler__body p
+    margin: 0
+    color: #e0e6f0
+    line-height: 1.55
+    max-width: none
 
