@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PersistPal.com - Interactive Map</title>
+    <meta name="author" content="Pawel Kusnierek">
+    <meta name="description"
+    content="Tools and guides for Zombie MMORPG 'Persist Online'.">
+    <meta name="keywords" content="Persist Online, Zombie MMORPG, Tools, Guides, Quest Spoilers, Persist Map">
+    <link rel="shortcut icon" href=/images/favicon.png type="image/x-icon">
+
+    <!-- css files -->
+    <link rel="stylesheet" href=/css/main.css>
+    
+
+    <!-- javascript files -->
+    <script src="scripts/map.js"></script>
+    <script src=/scripts/onload.js></script>
+
+    <!-- extra googleapi fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
+
+    <!-- Analytics and ad related section-->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-164338286-3"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-164338286-3');
+    </script>
+    <script data-ad-client="ca-pub-2936542406889680" async
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+</head>
+
+<body>
+    <main id="page-container">    
+        <div id="header">
+            <a href="https://persistpal.com"> 
+                <img src=/images/logo.png style="width:110px" alt="PersistPal logo">
+            </a>
+        </div>
+
+        <div id="banner">
+                
+        </div>
+        <div id="right-header">
+
+        </div>
+    <nav id="left-sidebar">
+        <div class="nav-section">GENERAL</div>
+        <div class="nav-item"> <a href="/">
+                <div class="nav-image-container"><img class="nav-image" src=/images/icon-news.gif>Latest News</div></a>
+        </div>
+        <div class="nav-item"><a href="https://tibiapal.com" target="_blank">
+                <div class="nav-image-container"><img class="nav-image" src=/images/tibiapallogo.png>TibiaPal.com</div></a>
+        </div>
+        <div class="nav-item"><a href="https://www.youtube.com/kusnierr" target="_blank">
+                <div class="nav-image-container"><img class="nav-image" src=/images/youtube-icon.png>YouTube Videos & Guides</div></a>
+        </div>
+        
+        <div class="nav-section">GUIDES</div>
+        <div class="nav-item"><a href="/beginners_guide">
+                <div class="nav-image-container"><img class="nav-image" src=/images/beginner.gif>Persist - Beginner's Guide</div></a>
+        </div>
+        <div class="nav-item"><a href="/quests">
+                <div class="nav-image-container"><img class="nav-image" src=/images/quests.png>Quests</div></a>
+        </div>
+        <div class="nav-item"><a href="/builds">
+                <div class="nav-image-container"><img class="nav-image" src=/images/builds.png>Builds (TBD)</div></a>
+        </div>
+
+        <div class="nav-section">TOOLS</div>
+        <div class="active nav-item"><a href="/map">
+                <div class="nav-image-container"><img class="nav-image" src=/images/map.gif>Interactive Map (TBD)</div></a>
+        </div>
+        <div class="nav-item"><a href="/planner">
+                <div class="nav-image-container"><img class="nav-image" src=/images/planner.png>Skill Tree Planner (TBD)</div></a>
+        </div>
+
+        
+</nav>
+    
+    <!-- Navigation toggle button for mobile -->
+    <button class="nav-toggle" onclick="toggleNavigation()" style="display: none;">☰ Menu</button>
+    
+    <section id="main-content">
+    <p> This tool will include an interactive map of the whole Persist world, most likely showing key Gathering Nodes and Quest Locations. <br><br>
+
+Development will require a full world map, either ideally generated/provided by CipSoft or manually drawn by a player. <br><br>
+
+This tool will be developed much closer to the full release of the game, considering that the map is constantly updated.</p>
+
+
+    </section>
+
+
+    <aside id="right-sidebar">
+            <section id="banner-paragraph">
+                <p class="donationparagraph">Join our <b>Discord</b> channel to stay up-to-date!<br>
+                    <a href="https://discord.gg/kbjqY2VRa9" target="_blank">discord.gg/kbjqY2VRa9</a>
+                </p>
+                <br>
+
+                <div id="kick-offline">
+                    <p class="donationparagraph">Follow me on <b>Kick</b>:<br>
+                        <a href="https://www.kick.com/Kusnier" target="_blank">kick.com/Kusnier</a>
+                    </p>
+
+                    <h4><br>Latest <a href="https://www.youtube.com/kusnierr" target="_blank">YouTube</a> Video:</h4>
+                    <iframe src="https://www.youtube.com/embed?listType=playlist&list=PLC0KAO2SnwlREgB3ScVsAK9OeAqwLXq8-" allowfullscreen></iframe>
+                </div>
+                <div id="kick-live" style="display: none">
+                    <h4><br>Live right now on <a href="https://www.kick.com/Kusnier" target="_blank">Kick</a>:</h4>
+                    <iframe src="" height="168" width="300" style="border: none; overflow: hidden;" allow="autoplay; fullscreen" sandbox="allow-scripts allow-same-origin allow-forms allow-popups"> </iframe>
+                </div>
+                <br><br>
+            </section>
+            <div id="ads-container">
+                
+                <br>
+            </div>
+            <br>
+        </aside>
+        <aside id="left-footer-space"></aside>
+        <footer id="footer">
+        </footer>
+        <aside id="right-footer-space"></aside>
+        </main>
+            <script>
+                //showAdblockPopup(); bump
+            </script>
+</body>
+</html>

@@ -1,0 +1,237 @@
+/* Ensure navigation stays on the left for very wide screens */
+@media (min-width: 1401px)
+    #header
+        position: fixed
+        left: 0
+        top: 0
+        z-index: 101
+    
+    #left-sidebar
+        position: fixed
+        left: 0
+        top: 120px
+        z-index: 100
+    
+    #tibiatrade_low_res
+        margin-left: 320px
+        margin-top: 200px
+    
+    #banner
+        margin-left: 320px
+    
+    #main-content
+        margin-left: 320px
+
+@media (max-width: 1400px)
+    #rashid-day
+        font-size: 14px
+    #rashidexample
+        width: 82px
+        height: 50px
+    .nav-item
+        font-size: 14px
+    #expcalculatorexample
+        width: 300px
+        height: 170px
+    #offlinetrainingexample
+        width: 300px
+        height: 170px
+    #header
+        display: none
+
+    #banner
+        display: none
+
+    #right-header
+        display: none
+
+    #left-sidebar
+        margin: 0
+        padding: 0
+        max-height: calc(100vh - 120px)
+        overflow-y: auto
+        overflow-x: hidden
+
+    #main-content
+        margin: 0
+        padding: 0
+
+    #right-sidebar
+        display: none
+
+    #left-footer-space
+        display: none
+
+    #footer
+        display: none
+
+    #right-footer-space
+        display: none
+    
+    #tibiatrade_low_res
+        display: initial
+        width: 100%
+
+@media (max-width: 768px)
+    #left-sidebar
+        width: 0
+        overflow: hidden
+        position: fixed
+        top: 48px
+        left: 0
+        height: calc(100vh - 48px)
+        z-index: 1000
+        background-color: #061021
+        transition: width 0.3s ease
+        border-right: 1px solid #1c4b9b
+        /* Override scrollbar styles for mobile */
+        scrollbar-width: none
+        -ms-overflow-style: none
+        &::-webkit-scrollbar
+            display: none
+    
+    /* Show navigation when expanded */
+    #left-sidebar.expanded
+        width: 200px
+        overflow-y: auto
+        overflow-x: hidden
+    
+    /* Custom scrollbar styling for mobile navigation */
+    #left-sidebar.expanded::-webkit-scrollbar
+        width: 6px
+    
+    #left-sidebar.expanded::-webkit-scrollbar-track
+        background: #061021
+    
+    #left-sidebar.expanded::-webkit-scrollbar-thumb
+        background: #1c4b9b
+        border-radius: 3px
+    
+    #left-sidebar.expanded::-webkit-scrollbar-thumb:hover
+        background: #2d8cf8
+    
+    /* Firefox scrollbar styling */
+    #left-sidebar.expanded
+        scrollbar-width: thin
+        scrollbar-color: #1c4b9b #061021
+    
+    /* Navigation toggle button */
+    .nav-toggle
+        position: fixed
+        top: 0
+        left: 0
+        z-index: 1001
+        background-color: #061021
+        border: 1px solid #1c4b9b
+        color: white
+        padding: 12px 16px
+        cursor: pointer
+        font-size: 16px
+        border-radius: 0
+        display: block !important
+        min-width: 200px
+        min-height: 48px
+        -webkit-tap-highlight-color: transparent
+        touch-action: manipulation
+    
+    /* Show text when expanded */
+    #left-sidebar.expanded .nav-item
+        width: 200px
+        text-align: left
+        font-size: 11px
+        line-height: 1.1
+        overflow: visible
+        padding: 2px 12px
+        margin: 0
+        white-space: nowrap
+    
+    #left-sidebar.expanded .nav-image
+        height: 16px
+        width: 16px
+        margin-top: 2px
+        margin-bottom: 2px
+        padding-left: 8px
+        padding-right: 8px
+    
+    #left-sidebar.expanded .nav-section
+        display: block
+        padding-top: 4px
+        padding-bottom: 2px
+        margin-bottom: 4px
+        font-size: 10px
+        text-align: center
+        font-weight: bold
+        border-bottom: 1px solid rgba(45, 140, 248, 0.7137254902)
+        margin: 0
+    
+    /* Hide Featured on TibiaTrade section when navigation is collapsed */
+    #tibiatrade_low_res
+        display: none
+    
+    /* Adjust main content - no margin when collapsed */
+    #main-content
+        margin-left: 0
+        margin-top: 48px
+        width: 100%
+        min-width: 100vw
+    
+    /* Ensure right sidebar (with ads) is not covered */
+    #right-sidebar
+        margin-left: 0
+        width: 100%
+        min-width: 300px
+
+/* Mobile-specific ad styling */
+#ads-container
+    /* Mobile-optimized ad container */
+    max-width: 100%
+    overflow: hidden
+
+/* Mobile-specific ad styling */
+@media (max-width: 768px)
+    #ads-container
+        padding: 10px
+        margin: 10px 0
+    
+    /* Ensure ads don't overflow on mobile */
+    #ads-container ins
+        max-width: 100% !important
+        height: auto !important
+    
+    /* Make tables responsive */
+    table
+        width: 100%
+        overflow-x: auto
+        display: block
+    
+    /* Improve form elements on mobile */
+    input, select, textarea
+        max-width: 100%
+        box-sizing: border-box
+    
+    /* Better mobile typography */
+    body
+        font-size: 16px
+    
+    h1, h2, h3, h4
+        font-size: 1.2em
+    
+    /* Ensure minimum usable widths for content */
+    #main-content
+        min-width: 100vw
+        overflow-x: auto
+    
+    #right-sidebar
+        min-width: 300px
+        overflow-x: auto
+    
+    /* Additional mobile navigation improvements */
+    #left-sidebar.expanded
+        max-height: calc(100vh - 48px)
+        padding-bottom: 20px
+    
+    #left-sidebar.expanded .nav-item
+        padding: 3px 12px
+    
+    #left-sidebar.expanded .nav-section
+        padding: 6px 12px 2px 12px

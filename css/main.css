@@ -1,0 +1,722 @@
+@charset "UTF-8";
+html {
+  /* Removed fixed min-width for mobile responsiveness */
+}
+
+body {
+  font-family: Verdana, Arial, Times New Roman, sans-serif;
+  font-size: 14px;
+  text-align: center;
+  margin: 0px;
+  padding: 0px;
+  background-color: #061021;
+  color: #FFFFFF;
+  background-image: url(../images/Background_Artwork.jpg);
+  background-repeat: no-repeat;
+  background-size: 1600px 800px;
+  background-position: 300px top;
+}
+
+h3 {
+  margin-top: 10px;
+}
+
+h4 {
+  font-size: 16px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-bottom: 10px;
+}
+
+p {
+  display: inline-block;
+  margin: 8px;
+  overflow-wrap: break-word;
+}
+
+a {
+  color: #6f9ae4;
+  text-decoration: underline;
+}
+
+th {
+  width: 33%;
+}
+
+td {
+  color: white;
+}
+
+ol, ul {
+  margin: 5px 0px 5px 0px;
+  padding: 0px 0px 0px 35px;
+}
+
+.float-left {
+  float: left;
+  display: inline-block;
+  padding-left: 35px;
+}
+
+.float-right {
+  float: right;
+  display: inline-block;
+}
+
+#tibiatrade {
+  border: none;
+  transform: scale(1);
+  transform-origin: 0 0;
+  width: 100%;
+  height: 58px;
+  align: center;
+}
+
+.tibiatrade_span {
+  margin-top: 10px;
+  display: block;
+  width: 100%;
+  text-align: left;
+  font-size: 12px;
+}
+
+.tibiatrade_span a {
+  color: inherit;
+}
+
+#tibiatrade_low_res {
+  display: none;
+}
+
+#page-container {
+  height: 100%;
+  margin: auto;
+  padding: 0px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+#header {
+  order: 1;
+  -ms-flex-preferred-size: 14.9%;
+  font-family: "Acme", sans-serif;
+  float: left;
+  display: block;
+  width: 300px;
+}
+
+#banner {
+  order: 2;
+  flex-basis: 53%;
+  height: 90%;
+  margin-left: 3%;
+  margin-right: 1%;
+  font-size: 14px;
+  text-shadow: black 1px 1px 3px;
+  line-height: 130%;
+  color: #ebebeb;
+}
+
+#right-header {
+  order: 3;
+  flex-basis: 20%;
+}
+
+#left-sidebar {
+  order: 4;
+  -ms-flex-preferred-size: 15%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: left;
+  align-content: left;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: left;
+  align-content: left;
+  width: 300px;
+  max-height: calc(100vh - 120px);
+  min-height: 400px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+/* Custom scrollbar styling for desktop navigation */
+#left-sidebar::-webkit-scrollbar {
+  width: 6px;
+}
+
+#left-sidebar::-webkit-scrollbar-track {
+  background: #061021;
+}
+
+#left-sidebar::-webkit-scrollbar-thumb {
+  background: #1c4b9b;
+  border-radius: 3px;
+}
+
+#left-sidebar::-webkit-scrollbar-thumb:hover {
+  background: #2d8cf8;
+}
+
+/* Firefox scrollbar styling */
+#left-sidebar {
+  scrollbar-width: thin;
+  scrollbar-color: #1c4b9b #061021;
+}
+
+.nav-item {
+  width: 100%;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  font-size: 15px;
+  font-family: "IBM Plex Sans", sans-serif;
+  transition: 0s;
+  text-align: left;
+  max-width: 300px;
+  min-width: 300px;
+}
+
+.nav-item a {
+  width: 100%;
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  line-height: 24px;
+}
+
+.nav-item:hover {
+  background-color: rgba(15, 35, 68, 0.9098039216);
+  color: white;
+}
+
+.active {
+  width: 100%;
+  color: #FFFFFF;
+  background-color: rgba(15, 35, 68, 0.9098039216);
+}
+
+#nav-item-hidden-list {
+  display: none;
+  list-style-type: none;
+  padding: 0;
+}
+
+.nav-item-hidden {
+  font-size: 90%;
+  padding: 10px 0 0 0;
+}
+
+.nav-item-hidden a {
+  padding: 5px 15px 5px 0;
+  text-align: right;
+}
+
+.nav-image {
+  margin-top: 3px;
+  margin-bottom: 3px;
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 20px;
+  width: 20px;
+}
+
+.nav-image-container {
+  display: flex;
+  justify-content: left;
+}
+
+.nav-section {
+  padding-top: 6px;
+  padding-bottom: 4px;
+  margin-bottom: 6px;
+  font-size: 12px;
+  text-align: center;
+  max-width: 220px;
+  min-width: 220px;
+  margin-left: 40px;
+  margin-right: 40px;
+  border-bottom: 1px solid rgba(45, 140, 248, 0.7137254902);
+  font-weight: bold;
+}
+
+#main-content {
+  order: 5;
+  flex-basis: 53%;
+  height: 90%;
+  background-color: #061021;
+  margin-left: 3%;
+  margin-right: 1%;
+  font-size: 14px;
+  text-shadow: black 1px 1px 3px;
+  line-height: 130%;
+  color: #ebebeb;
+}
+
+#right-sidebar {
+  order: 6;
+  height: 100%;
+  flex-basis: 20%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+}
+
+.right-sidebar-item {
+  width: 300px;
+}
+
+.logos {
+  display: inline;
+}
+
+.border-img {
+  border: black solid 1px;
+}
+
+#left-footer-space {
+  order: 7;
+  -ms-flex-preferred-size: 15%;
+  width: 300px;
+}
+
+#footer {
+  order: 8;
+  flex-basis: 60%;
+  align-items: center;
+  padding-top: 10px;
+}
+
+#right-footer-space {
+  order: 9;
+  flex-basis: 20%;
+}
+
+#footerParagraph {
+  width: 100%;
+  margin: 0px;
+  font-size: 14px;
+}
+
+.article-date-title {
+  margin-bottom: 5px;
+  text-align: left;
+  height: 28px;
+  background-image: url(https://tibiapal.com/images/newsheadline_background.gif);
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+}
+
+.main-article {
+  margin-left: 15px;
+  margin-right: 5px;
+  text-align: left;
+  padding-bottom: 30px;
+}
+
+.date {
+  position: relative;
+  font-size: 11px;
+  top: 3px;
+  left: 5px;
+  padding-right: 15px;
+}
+
+.title {
+  position: relative;
+  font-size: 12px;
+  font-weight: bold;
+  top: 3px;
+}
+
+.main-article-standalone {
+  margin: 15px;
+  text-align: left;
+  padding-bottom: 0px;
+}
+
+#banner-paragraph {
+  font-size: 12px;
+  text-shadow: black 1px 1px 3px;
+  line-height: 130%;
+  color: #ebebeb;
+  display: inline-block;
+  background-color: #061021;
+}
+
+.orange {
+  color: orange;
+}
+
+.gold {
+  color: gold;
+}
+
+#submitbutton {
+  margin-top: 10px;
+}
+
+.block_element {
+  display: block;
+}
+
+#profit_positive {
+  font-weight: bold;
+  color: green;
+}
+
+#profit_negative {
+  font-weight: bold;
+  color: red;
+  opacity: 100%;
+}
+
+#align-left {
+  text-align: left;
+}
+
+#align-left li {
+  padding-bottom: 12px;
+}
+
+.expandable-div {
+  background-color: #061021;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: 2px solid rgba(45, 140, 248, 0.7137254902) !important;
+  border-radius: 6px !important;
+  outline: none;
+  text-align: left;
+  font-size: 18px;
+  text-shadow: black 1px 1px 3px;
+  line-height: 130%;
+  color: #ebebeb;
+  font-family: Verdana, Arial, Times New Roman, sans-serif;
+  transition: all 0.3s ease !important;
+  position: relative;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+.expandable-div:hover {
+  background-color: rgba(15, 35, 68, 0.95) !important;
+  border-color: #2d8cf8 !important;
+  box-shadow: 0 4px 8px rgba(45, 140, 248, 0.3);
+  transform: translateY(-1px);
+}
+.expandable-div:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+.expandable-div:after {
+  content: "+";
+  font-size: 20px !important;
+  font-weight: bold;
+  margin-left: 10px;
+  float: right;
+  transition: transform 0.3s ease;
+}
+.expandable-div:hover:after {
+  transform: scale(1.2);
+}
+
+.active-expanded-div {
+  background-color: rgba(15, 35, 68, 0.9098039216);
+  border-color: #2d8cf8 !important;
+  box-shadow: 0 4px 8px rgba(45, 140, 248, 0.4);
+}
+.active-expanded-div:after {
+  content: "−" !important;
+}
+
+.expandable-div-content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+}
+
+.tablinks {
+  pointer-events: none;
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.tablinks.enabled {
+  pointer-events: auto;
+  opacity: 1;
+  cursor: pointer;
+}
+
+/* Ensure navigation stays on the left for very wide screens */
+@media (min-width: 1401px) {
+  #header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 101;
+  }
+  #left-sidebar {
+    position: fixed;
+    left: 0;
+    top: 120px;
+    z-index: 100;
+  }
+  #tibiatrade_low_res {
+    margin-left: 320px;
+    margin-top: 200px;
+  }
+  #banner {
+    margin-left: 320px;
+  }
+  #main-content {
+    margin-left: 320px;
+  }
+}
+@media (max-width: 1400px) {
+  #rashid-day {
+    font-size: 14px;
+  }
+  #rashidexample {
+    width: 82px;
+    height: 50px;
+  }
+  .nav-item {
+    font-size: 14px;
+  }
+  #expcalculatorexample {
+    width: 300px;
+    height: 170px;
+  }
+  #offlinetrainingexample {
+    width: 300px;
+    height: 170px;
+  }
+  #header {
+    display: none;
+  }
+  #banner {
+    display: none;
+  }
+  #right-header {
+    display: none;
+  }
+  #left-sidebar {
+    margin: 0;
+    padding: 0;
+    max-height: calc(100vh - 120px);
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+  #main-content {
+    margin: 0;
+    padding: 0;
+  }
+  #right-sidebar {
+    display: none;
+  }
+  #left-footer-space {
+    display: none;
+  }
+  #footer {
+    display: none;
+  }
+  #right-footer-space {
+    display: none;
+  }
+  #tibiatrade_low_res {
+    display: initial;
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  #left-sidebar {
+    width: 0;
+    overflow: hidden;
+    position: fixed;
+    top: 48px;
+    left: 0;
+    height: calc(100vh - 48px);
+    z-index: 1000;
+    background-color: #061021;
+    transition: width 0.3s ease;
+    border-right: 1px solid #1c4b9b;
+    /* Override scrollbar styles for mobile */
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+  #left-sidebar::-webkit-scrollbar {
+    display: none;
+  }
+  /* Show navigation when expanded */
+  #left-sidebar.expanded {
+    width: 200px;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+  /* Custom scrollbar styling for mobile navigation */
+  #left-sidebar.expanded::-webkit-scrollbar {
+    width: 6px;
+  }
+  #left-sidebar.expanded::-webkit-scrollbar-track {
+    background: #061021;
+  }
+  #left-sidebar.expanded::-webkit-scrollbar-thumb {
+    background: #1c4b9b;
+    border-radius: 3px;
+  }
+  #left-sidebar.expanded::-webkit-scrollbar-thumb:hover {
+    background: #2d8cf8;
+  }
+  /* Firefox scrollbar styling */
+  #left-sidebar.expanded {
+    scrollbar-width: thin;
+    scrollbar-color: #1c4b9b #061021;
+  }
+  /* Navigation toggle button */
+  .nav-toggle {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1001;
+    background-color: #061021;
+    border: 1px solid #1c4b9b;
+    color: white;
+    padding: 12px 16px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 0;
+    display: block !important;
+    min-width: 200px;
+    min-height: 48px;
+    -webkit-tap-highlight-color: transparent;
+    touch-action: manipulation;
+  }
+  /* Show text when expanded */
+  #left-sidebar.expanded .nav-item {
+    width: 200px;
+    text-align: left;
+    font-size: 11px;
+    line-height: 1.1;
+    overflow: visible;
+    padding: 2px 12px;
+    margin: 0;
+    white-space: nowrap;
+  }
+  #left-sidebar.expanded .nav-image {
+    height: 16px;
+    width: 16px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+  #left-sidebar.expanded .nav-section {
+    display: block;
+    padding-top: 4px;
+    padding-bottom: 2px;
+    margin-bottom: 4px;
+    font-size: 10px;
+    text-align: center;
+    font-weight: bold;
+    border-bottom: 1px solid rgba(45, 140, 248, 0.7137254902);
+    margin: 0;
+  }
+  /* Hide Featured on TibiaTrade section when navigation is collapsed */
+  #tibiatrade_low_res {
+    display: none;
+  }
+  /* Adjust main content - no margin when collapsed */
+  #main-content {
+    margin-left: 0;
+    margin-top: 48px;
+    width: 100%;
+    min-width: 100vw;
+  }
+  /* Ensure right sidebar (with ads) is not covered */
+  #right-sidebar {
+    margin-left: 0;
+    width: 100%;
+    min-width: 300px;
+  }
+}
+/* Mobile-specific ad styling */
+#ads-container {
+  /* Mobile-optimized ad container */
+  max-width: 100%;
+  overflow: hidden;
+}
+
+/* Mobile-specific ad styling */
+@media (max-width: 768px) {
+  #ads-container {
+    padding: 10px;
+    margin: 10px 0;
+  }
+  /* Ensure ads don't overflow on mobile */
+  #ads-container ins {
+    max-width: 100% !important;
+    height: auto !important;
+  }
+  /* Make tables responsive */
+  table {
+    width: 100%;
+    overflow-x: auto;
+    display: block;
+  }
+  /* Improve form elements on mobile */
+  input, select, textarea {
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+  /* Better mobile typography */
+  body {
+    font-size: 16px;
+  }
+  h1, h2, h3, h4 {
+    font-size: 1.2em;
+  }
+  /* Ensure minimum usable widths for content */
+  #main-content {
+    min-width: 100vw;
+    overflow-x: auto;
+  }
+  #right-sidebar {
+    min-width: 300px;
+    overflow-x: auto;
+  }
+  /* Additional mobile navigation improvements */
+  #left-sidebar.expanded {
+    max-height: calc(100vh - 48px);
+    padding-bottom: 20px;
+  }
+  #left-sidebar.expanded .nav-item {
+    padding: 3px 12px;
+  }
+  #left-sidebar.expanded .nav-section {
+    padding: 6px 12px 2px 12px;
+  }
+}
+#stream-container {
+  background-color: #061021;
+  padding-bottom: 30px;
+}
+
+#twitch_iframe {
+  border: none;
+}
+
+#stream-info {
+  font-size: 14px;
+  padding-bottom: 10px;
+}
+
+#discord-container {
+  background-color: #061021;
+}/*# sourceMappingURL=main.css.map */
