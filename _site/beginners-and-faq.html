@@ -64,8 +64,8 @@
         </div>
         
         <div class="nav-section">GUIDES</div>
-        <div class="active nav-item"><a href="/beginners_guide">
-                <div class="nav-image-container"><img class="nav-image" src=/images/beginner.gif>Persist - Beginner's Guide</div></a>
+        <div class="active nav-item"><a href="/beginners-and-faq">
+                <div class="nav-image-container"><img class="nav-image" src=/images/beginner.gif>Beginner's Guide & FAQ</div></a>
         </div>
         <div class="nav-item"><a href="/quests">
                 <div class="nav-image-container"><img class="nav-image" src=/images/quests.png>Quests</div></a>
@@ -89,13 +89,33 @@
     <button class="nav-toggle" onclick="toggleNavigation()" style="display: none;">☰ Menu</button>
     
     <section id="main-content">
-    <p> TBD... early melee
-Factions
-Safehouse
+    <div class="guide_tab">
+    <button class="tablinks active" onclick="show_tab(event, 'Beginners')">Beginner's Guide</button>
+    <button class="tablinks" onclick="show_tab(event, 'Safehouse')">Safehouse & Crafting</button>
+    <button class="tablinks" onclick="show_tab(event, 'Factions')">Professions</button>
+    <button class="tablinks" onclick="show_tab(event, 'Factions')">Factions</button>
 
+</div>
 
-</p>
+<div id="guide-content">
+    <div id="Beginners" class="tabcontent">
+        <p><b>Early melee</b> — TBD. This section will cover starting weapons, basic combat, and early-game melee tips.</p>
+    </div>
 
+    <div id="Safehouse" class="tabcontent">
+        <p><b>Safehouse</b> — TBD. This section will cover the safehouse and how to use it.</p>
+    </div>
+
+    <div id="Professions" class="tabcontent">
+        <p><b>Factions</b> — TBD. This section will cover faction overview and how they affect gameplay.</p>
+    </div>
+
+    <div id="Factions" class="tabcontent">
+        <p><b>Factions</b> — TBD. This section will cover faction overview and how they affect gameplay.</p>
+    </div>
+
+    
+</div>
 
     </section>
 

@@ -1,0 +1,47 @@
+// ============================================
+// Beginner's Guide – tab bar (same look as quests)
+// ============================================
+
+.guide_tab
+    overflow: hidden
+
+.guide_tab button
+    border: 1px solid #cbd4ff
+    background-color: inherit
+    float: left
+    outline: none
+    cursor: pointer
+    padding: 14px 16px
+    transition: 0.3s
+    width: 20%
+    color: #ccc
+    font-size: 14px
+    font-weight: bold
+    font-family: Verdana, Arial, Times New Roman, sans-serif
+    box-sizing: border-box
+
+.guide_tab button:hover
+    background-color: #14356d
+
+.guide_tab button.active
+    background-color: #1c4b9b
+
+// ============================================
+// Guide content area (#guide-content)
+// ============================================
+
+#guide-content > div
+    padding: 24px 20px 32px
+    display: none
+    border-top: none
+    background: rgba(6, 16, 33, 0.6)
+    text-align: left
+    line-height: 1.6
+
+#guide-content p
+    margin: 0
+
+#guide-content b
+    font-weight: 600
+    color: #d4dcf0
+    letter-spacing: 0.01em
