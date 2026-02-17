@@ -78,6 +78,61 @@
     display: none
     overflow: hidden
 
+// ============================================
+// Expandable section (details/summary) – reusable across quests, guide, etc.
+// ============================================
+
+.expandable-section-intro
+    padding-bottom: 1.55em
+
+.expandable-section
+    margin-bottom: 0.5em
+    border: 1px solid rgba(203, 212, 255, 0.2)
+    border-radius: 6px
+    background: rgba(12, 28, 56, 0.5)
+    overflow: hidden
+
+.expandable-section[open]
+    border-color: rgba(45, 140, 248, 0.4)
+    box-shadow: 0 0 0 1px rgba(45, 140, 248, 0.15)
+
+.expandable-section summary
+    padding: 12px 16px
+    cursor: pointer
+    font-weight: 600
+    color: #d4dcf0
+    list-style: none
+    user-select: none
+    transition: background-color 0.2s ease, color 0.2s ease
+
+.expandable-section summary::-webkit-details-marker
+    display: none
+
+.expandable-section summary::before
+    content: "▶"
+    display: inline-block
+    margin-right: 10px
+    font-size: 0.75em
+    color: rgba(45, 140, 248, 0.9)
+    transition: transform 0.2s ease
+
+.expandable-section[open] summary::before
+    transform: rotate(90deg)
+
+.expandable-section summary:hover
+    background-color: rgba(28, 75, 155, 0.3)
+    color: #e8ecf8
+
+.expandable-section__body
+    padding: 14px 16px 16px 42px
+    border-top: 1px solid rgba(203, 212, 255, 0.1)
+
+.expandable-section__body p
+    margin: 0
+    color: #e0e6f0
+    line-height: 1.55
+    max-width: none
+
 // Disable tablinks until page is fully loaded to prevent content appearing in wrong tab
 .tablinks
     pointer-events: none
