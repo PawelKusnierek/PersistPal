@@ -5,4 +5,4 @@ However, it will not be merged as is. I will review it and add it properly as pa
 
 Thanks to everyone who wishes to contribute.
 
-~Kusnier
+--Kusnier
