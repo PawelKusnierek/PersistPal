@@ -6,7 +6,9 @@
 
   function buildRow(name, data) {
     const tr = document.createElement('tr');
-    const validSlots = data.validSlots || [];
+    const validSlots = (data.validSlots || []).slice().sort(function (a, b) {
+      return a.localeCompare(b, undefined, { sensitivity: 'base' });
+    });
     const maxValue = data.maxValue != null && data.maxValue !== '' ? String(data.maxValue) : '—';
     tr.innerHTML =
       '<td>' + escapeHtml(name) + '</td>' +
