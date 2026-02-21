@@ -1,0 +1,58 @@
+---
+layout: default
+title: PersistPal - Modifiers
+scripts: <script src="scripts/modifiers.js"></script>
+---
+
+<p>Items can roll random modifiers. Each modifier is limited to certain item slots. Use the filter below to show only modifiers that can appear on a specific slot.</p>
+
+<div class="modifiers-tool">
+  <fieldset class="modifiers-filter">
+    <legend>Filter by item slot</legend>
+    <div class="modifiers-filter-options">
+      <label class="modifiers-radio">
+        <input type="radio" name="slotFilter" value="" checked> All
+      </label>
+      <label class="modifiers-radio">
+        <input type="radio" name="slotFilter" value="Weapons"> Ranged Weapons
+      </label>
+      <label class="modifiers-radio">
+        <input type="radio" name="slotFilter" value="Weapons"> Melee Weapons
+      </label>
+      <label class="modifiers-radio">
+        <input type="radio" name="slotFilter" value="Head"> Head
+      </label>
+      <label class="modifiers-radio">
+        <input type="radio" name="slotFilter" value="Shoulders"> Shoulders
+      </label>
+      <label class="modifiers-radio">
+        <input type="radio" name="slotFilter" value="Chest"> Chest
+      </label>
+      <label class="modifiers-radio">
+        <input type="radio" name="slotFilter" value="Wrists"> Wrists
+      </label>
+      <label class="modifiers-radio">
+        <input type="radio" name="slotFilter" value="Boots"> Boots
+      </label>
+      <label class="modifiers-radio">
+        <input type="radio" name="slotFilter" value="Pants"> Pants
+      </label>
+      <label class="modifiers-radio">
+        <input type="radio" name="slotFilter" value="Gloves"> Gloves
+      </label>
+    </div>
+  </fieldset>
+
+  <table class="modifiers-table">
+    <thead>
+      <tr>
+        <th>Modifier Name</th>
+        <th>Modifier Max Value</th>
+        <th>Valid Item Types</th>
+      </tr>
+    </thead>
+    <tbody id="modifiers-table-body">
+      <!-- Filled by modifiers.js -->
+    </tbody>
+  </table>
+</div>

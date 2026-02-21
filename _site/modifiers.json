@@ -1,0 +1,66 @@
+{
+  "More Accuracy for Ranged Weapons (Accurate)": {
+    "validSlots": ["Ranged Weapons", "Gloves"],
+    "maxValue": "32%"
+  },
+  "Improved Damage vs Non-Elite NPCs (Ruthless)": {
+    "validSlots": ["Melee Weapons"],
+    "maxValue": "8%"
+  },
+  "Less Durability Loss while Harvesting (Reinforced)": {
+    "validSlots": ["Wrists"],
+    "maxValue": "20%"
+  },
+  "Increases the maximum HP (Vitalizing)": {
+    "validSlots": ["Boots"],
+    "maxValue": "1000"
+  },
+  "Less Stamina Costs for Armor and Misc Actives (Efficient)": {
+    "validSlots": ["Head", "Chest"],
+    "maxValue": "12%"
+  },
+  "Lower chance of gaining Fire debuff (Fireproof)": {
+    "validSlots": ["Pants"],
+    "maxValue": "16%"
+  },
+  "Lower chance of gaining Radiation debuff (Gamma-Shielded)": {
+    "validSlots": ["Head"],
+    "maxValue": "16%"
+  },
+  "Chance to ignore the Gain of Debuff Stun (Monolith)": {
+    "validSlots": ["Boots"],
+    "maxValue": "28%"
+  },
+  "Less Durability Loss on this Item (Hardwearing)": {
+    "validSlots": ["Chest"],
+    "maxValue": "32%"
+  },
+  "Improved Headshot Damage (Precise)": {
+    "validSlots": ["Ranged Weapons"],
+    "maxValue": "8%"
+  },
+  "Increased DR Rating vs Non-Elite Mutants (Antigen)": {
+    "validSlots": ["Chest"],
+    "maxValue": "3000"
+  },
+  "Improved Melee Attack Speed (Rapid)": {
+    "validSlots": ["Ranged Weapons"],
+    "maxValue": "8%"
+  },
+  "Chance to Block the Debuff Blind (Dauntless)": {
+    "validSlots": ["Shoulders"],
+    "maxValue": "28%"
+  },
+  "Increased Evasion Rating vs Non-Elite Zombies (Elusive)": {
+    "validSlots": ["Chest"],
+    "maxValue": "3000"
+  },
+  "Improved Damage vs Elites and Bosses (Davidic)": {
+    "validSlots": ["Gloves"],
+    "maxValue": "8%"
+  },
+  "Increased DR Rating vs Non-Elite NPCs (Ironclad)": {
+    "validSlots": ["Pants"],
+    "maxValue": "8%"
+  }
+}

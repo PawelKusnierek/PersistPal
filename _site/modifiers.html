@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PersistPal - Quests</title>
+    <title>PersistPal - Modifiers</title>
     <meta name="author" content="Pawel Kusnierek">
     <meta name="description"
     content="Tools and guides for Zombie MMORPG 'Persist Online'.">
@@ -16,7 +16,7 @@
     
 
     <!-- JavaScript -->
-    
+    <script src="scripts/modifiers.js"></script>
     <script src=/scripts/onload.js></script>
 
     <!-- Extra GoogleAPI fonts -->
@@ -67,10 +67,10 @@
         <div class="nav-item"><a href="/beginners-and-faq">
                 <div class="nav-image-container"><img class="nav-image" src=/images/beginner.gif>Beginner's Guide & FAQ</div></a>
         </div>
-        <div class="active nav-item"><a href="/quests">
+        <div class="nav-item"><a href="/quests">
                 <div class="nav-image-container"><img class="nav-image" src=/images/quests.png>Quests</div></a>
         </div>
-        <div class="nav-item"><a href="/modifiers">
+        <div class="active nav-item"><a href="/modifiers">
                 <div class="nav-image-container"><img class="nav-image" src=/images/modifiers.png>Modifiers</div></a>
         </div>
         <div class="nav-item"><a href="/builds">
@@ -92,84 +92,59 @@
     <button class="nav-toggle" onclick="toggleNavigation()" style="display: none;">☰ Menu</button>
     
     <section id="main-content">
-    <div class="quests_tab">
-    <button class="tablinks active" onclick="show_tab(event, 'NPCs')">Quest NPCs & Availability</button>
-    <button class="tablinks" onclick="show_tab(event, 'SpoilersTab')">Tips & Spoilers</button>
+    <p>Items can roll random modifiers. Each modifier is limited to certain item slots. Use the filter below to show only modifiers that can appear on a specific slot.</p>
+
+<div class="modifiers-tool">
+  <fieldset class="modifiers-filter">
+    <legend>Filter by item slot</legend>
+    <div class="modifiers-filter-options">
+      <label class="modifiers-radio">
+        <input type="radio" name="slotFilter" value="" checked> All
+      </label>
+      <label class="modifiers-radio">
+        <input type="radio" name="slotFilter" value="Weapons"> Ranged Weapons
+      </label>
+      <label class="modifiers-radio">
+        <input type="radio" name="slotFilter" value="Weapons"> Melee Weapons
+      </label>
+      <label class="modifiers-radio">
+        <input type="radio" name="slotFilter" value="Head"> Head
+      </label>
+      <label class="modifiers-radio">
+        <input type="radio" name="slotFilter" value="Shoulders"> Shoulders
+      </label>
+      <label class="modifiers-radio">
+        <input type="radio" name="slotFilter" value="Chest"> Chest
+      </label>
+      <label class="modifiers-radio">
+        <input type="radio" name="slotFilter" value="Wrists"> Wrists
+      </label>
+      <label class="modifiers-radio">
+        <input type="radio" name="slotFilter" value="Boots"> Boots
+      </label>
+      <label class="modifiers-radio">
+        <input type="radio" name="slotFilter" value="Pants"> Pants
+      </label>
+      <label class="modifiers-radio">
+        <input type="radio" name="slotFilter" value="Gloves"> Gloves
+      </label>
+    </div>
+  </fieldset>
+
+  <table class="modifiers-table">
+    <thead>
+      <tr>
+        <th>Modifier Name</th>
+        <th>Modifier Max Value</th>
+        <th>Valid Item Types</th>
+      </tr>
+    </thead>
+    <tbody id="modifiers-table-body">
+      <!-- Filled by modifiers.js -->
+    </tbody>
+  </table>
 </div>
 
-<!-- Tab content -->
-<div id="quests-content">
-    <div id="NPCs" class="tabcontent"><p>This guide tells you when NPCs grant quests, so you can pick them up as soon as possible.<br><br>
-    <i>I recommend grinding for level 4 while doing the initial 'Humble Beginnings' quest for Eli Dawson, so that when you get back to Junction, you can pick up the first two sets of quests together.</i><br><br>
-
-    <b>After you choose your weapon reward from Marcia Ramirez:</b>
-    <ul>
-    <li>Marcia Ramirez
-    <li>Eli Dawson (Gym)
-    <li>Stanley McDowell (Diner)
-    <li>Dean Alfred (East area of Junction)
-    <li>Derrick Walsh (East area of Junction)
-    </ul>
-    <br>
-
-    <b>Level 4:</b>
-    <ul>
-    <li>Marcia Ramirez
-    <li>Violet Hartwell (Flower Shop)
-    <li>Charlie Hobson (Gas Station)
-    <li>Eli Dawson (Gym)
-    <li>Derrick Walsh (East area of Junction)
-    </ul>
-    <br>
-
-    <b>Level 10:</b>
-    <ul>
-    <li>Phil Wagner (Library)
-    <li>Violet Hartwell (Flower Shop)
-    <li>Charlie Hobson (Gas Station)
-    <li>Nina Brooks (Gas Station)
-    <li>Henry R. Cass (Wanders around Junction, Traffic Cone Hat)
-    </ul>
-    </div>
-
-    <div id="SpoilersTab" class="tabcontent">
-        <p class="expandable-section-intro"><strong>Warning: spoilers ahead!</strong></p>
-        <details class="expandable-section">
-            <summary>Memento: Lost Heirloom</summary>
-            <div class="expandable-section_body">
-                <ul><li>Follow the 'Bones' Trail leading away from the grave (Mr. Snoop is located at level -1 in the underground garage around 100m West from the Grave)</ul>
-            </div>
-        </details>
-
-        <details class="expandable-section">
-            <summary>Electrifying The Stronghold: Calibrating The Current</summary>
-            <div class="expandable-section_body">
-                <p>The correct order for the switches:</p>
-                <ul>
-                <li>Gym (Level 0)
-                <li>Construction Site (East Junction, Level +2)
-                <li>Diner (Middle Junction, Level +1)
-                <li>Community Center (Big building with Auction House, Level 0)
-                <li>Violet's Flower Shop (Level 0)
-                </ul>
-            </div>
-        </details>
-
-        <details class="expandable-section">
-            <summary>The Tinkerer’s Legacy</summary>
-            <div class="expandable-section_body">
-                <ul>
-                <li>Mission 1: Can be found on the 3rd floor in the Toy Factory, big building East/North East of Junction with a Big Brown Toy Bear on top of the building, approx. 450m East of Junction
-                <li>Mission 2: The Spinning Crystal - Can be found on the 2nd floor in the Parkside Mall Jeweller's Store, South West of Junction
-                <li>Mission 3: Threads of Harmony - Can be found on the ground floor inside the 'Special Repairs' Factory Building approx. 350m East of Junction (Near a Raider base)
-                <li>Mission 4: Box of Secrets - Can be found inside the closest building at a Junkyard 1.5 km South/South East of Junction
-                <li>Mission 5: The Artisan's Key - Can be found at the Lumbermill South/South East of Junction, near where you get the Yellow Summer Dress for Miles Miller, approx 600m East/South East of Junction
-                </ul>
-            </div>
-        </details>
-
-    </div>
-</div>
     </section>
 
 

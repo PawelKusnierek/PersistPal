@@ -10,12 +10,15 @@
                 <div class="nav-image-container"><img class="nav-image" src={{"images/youtube-icon.png" | relative_url}}>YouTube Videos & Guides</div></a>
         </div>
         
-        <div class="nav-section">GUIDES</div>
+        <div class="nav-section">GUIDES / REFERENCES</div>
         <div class="{% if page.url contains "/beginners-and-faq.html" %}active {% endif %}nav-item"><a href="/beginners-and-faq">
                 <div class="nav-image-container"><img class="nav-image" src={{"images/beginner.gif" | relative_url}}>Beginner's Guide & FAQ</div></a>
         </div>
         <div class="{% if page.url contains "/quests.html" %}active {% endif %}nav-item"><a href="/quests">
                 <div class="nav-image-container"><img class="nav-image" src={{"images/quests.png" | relative_url}}>Quests</div></a>
+        </div>
+        <div class="{% if page.url contains "/modifiers" %}active {% endif %}nav-item"><a href="/modifiers">
+                <div class="nav-image-container"><img class="nav-image" src={{"images/modifiers.png" | relative_url}}>Modifiers</div></a>
         </div>
         <div class="{% if page.url contains "/builds.html" %}active {% endif %}nav-item"><a href="/builds">
                 <div class="nav-image-container"><img class="nav-image" src={{"images/builds.png" | relative_url}}>Builds (WIP)</div></a>

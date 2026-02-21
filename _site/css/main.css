@@ -919,4 +919,74 @@ ol, ul {
   font-weight: 600;
   color: #d4dcf0;
   letter-spacing: 0.01em;
+}
+
+.modifiers-tool {
+  margin-top: 1em;
+}
+
+.modifiers-filter {
+  margin-bottom: 1.25em;
+  padding: 1em 1.25em;
+  border: 1px solid rgba(45, 140, 248, 0.5);
+  border-radius: 6px;
+  background: rgba(6, 16, 33, 0.5);
+}
+
+.modifiers-filter legend {
+  padding: 0 0.5em;
+  color: #d4dcf0;
+  font-weight: 600;
+}
+
+.modifiers-filter-options {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75em 1.5em;
+  margin-top: 0.5em;
+}
+
+.modifiers-radio {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35em;
+  cursor: pointer;
+  color: #e0e6f0;
+  font-size: 14px;
+}
+
+.modifiers-radio input {
+  cursor: pointer;
+}
+
+.modifiers-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: rgba(6, 16, 33, 0.5);
+  border: 1px solid rgba(45, 140, 248, 0.4);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.modifiers-table th,
+.modifiers-table td {
+  padding: 10px 14px;
+  text-align: left;
+  border-bottom: 1px solid rgba(45, 140, 248, 0.25);
+  color: #e0e6f0;
+}
+
+.modifiers-table th {
+  background: rgba(28, 75, 155, 0.4);
+  color: #ebebeb;
+  font-weight: 600;
+}
+
+.modifiers-table tbody tr:hover {
+  background: rgba(20, 53, 109, 0.3);
+}
+
+.modifiers-table tbody tr:last-child td {
+  border-bottom: none;
 }/*# sourceMappingURL=main.css.map */
