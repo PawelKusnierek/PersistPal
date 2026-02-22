@@ -69,7 +69,11 @@
   },
   "Increased DR Rating vs Non-Elite NPCs (Ironclad)": {
     "validSlots": ["Pants"],
-    "maxValue": "8%"
+    "maxValue": "3000"
+  },
+  "Increased DR Rating vs Non-Elite Zombies (Immune)": {
+    "validSlots": ["Chest"],
+    "maxValue": "3000"
   },
   "Less Recoil for Ranged Weapons (Steady)": {
     "validSlots": ["Gloves"],
