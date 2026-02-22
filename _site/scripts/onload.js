@@ -23,10 +23,7 @@ function enable_expandable_div_buttons() {
 }
 
 function enable_default_tabs() {
-  if (location.href.split("/").slice(-1).includes('quests')) {
-    initial_show_tab("NPCs")
-  }
-  else if (location.href.split("/").slice(-1).includes('equipment')) {
+  if (location.href.split("/").slice(-1).includes('equipment')) {
     initial_show_tab("Druid")
   }
   else if (location.href.split("/").slice(-1).includes('beginners-and-faq')) {
