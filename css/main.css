@@ -443,10 +443,6 @@ ol, ul {
   overflow: hidden;
 }
 
-.expandable-section-intro {
-  margin-bottom: 1em;
-}
-
 .expandable-section {
   margin-bottom: 0.5em;
   border: 1px solid rgba(203, 212, 255, 0.2);
@@ -815,6 +811,23 @@ ol, ul {
   background-color: #1c4b9b;
 }
 
+#quests-content {
+  text-align: left;
+}
+
+#quests-content .expandable-section-intro {
+  margin-bottom: 1em;
+  padding: 10px 14px 10px 14px;
+  font-size: 0.95em;
+  font-weight: 600;
+  color: #e8d4a0;
+  background: rgba(180, 130, 40, 0.15);
+  border: 1px solid rgba(200, 160, 60, 0.35);
+  border-radius: 6px;
+  border-left: 3px solid rgba(230, 180, 50, 0.7);
+  line-height: 1.4;
+}
+
 #quests-content > div {
   padding: 24px 20px 32px;
   display: none;
@@ -822,10 +835,6 @@ ol, ul {
   background: rgba(6, 16, 33, 0.6);
   text-align: left;
   line-height: 1.6;
-}
-
-#quests-content p {
-  margin: 0;
 }
 
 #quests-content b {
