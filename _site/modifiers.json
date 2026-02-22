@@ -59,7 +59,7 @@
     "validSlots": ["Chest"],
     "maxValue": "3000"
   },
-  "Increased Damage vs Non-Elite Animals (Predator)": {
+  "Improved Damage vs Non-Elite Animals (Predator)": {
     "validSlots": ["Chest", "Ranged Weapons"],
     "maxValue": "8%"
   },
