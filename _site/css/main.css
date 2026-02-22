@@ -894,7 +894,7 @@ ol, ul {
   cursor: pointer;
   padding: 14px 16px;
   transition: 0.3s;
-  flex: 1 1 33%;
+  flex: 1 1 25%;
   min-width: 0;
   color: #ccc;
   font-size: 14px;
