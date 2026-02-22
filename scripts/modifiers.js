@@ -28,11 +28,24 @@
     return radio ? (radio.value || '') : '';
   }
 
+  function getSearchQuery() {
+    const input = document.getElementById('modifiers-search-input');
+    return input ? (input.value || '').trim() : '';
+  }
+
   function filterModifiers(modifiers, slot) {
     if (!slot) return modifiers;
     return modifiers.filter(function (entry) {
       const slots = entry.data.validSlots || [];
       return slots.indexOf(slot) !== -1;
+    });
+  }
+
+  function filterBySearch(modifiers, query) {
+    if (!query) return modifiers;
+    const lower = query.toLowerCase();
+    return modifiers.filter(function (entry) {
+      return entry.name.toLowerCase().indexOf(lower) !== -1;
     });
   }
 
@@ -47,7 +60,9 @@
 
   function refreshTable() {
     const slot = getSelectedSlotFilter();
-    const filtered = filterModifiers(allModifiers, slot);
+    const query = getSearchQuery();
+    var filtered = filterModifiers(allModifiers, slot);
+    filtered = filterBySearch(filtered, query);
     renderTable(filtered);
   }
 
@@ -79,6 +94,11 @@
     document.querySelectorAll('input[name="slotFilter"]').forEach(function (radio) {
       radio.addEventListener('change', refreshTable);
     });
+
+    var searchInput = document.getElementById('modifiers-search-input');
+    if (searchInput) {
+      searchInput.addEventListener('input', refreshTable);
+    }
   }
 
   if (document.readyState === 'loading') {
