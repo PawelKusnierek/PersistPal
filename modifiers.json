@@ -60,7 +60,7 @@
     "maxValue": "3000"
   },
   "Improved Damage vs Non-Elite Animals (Predator)": {
-    "validSlots": ["Chest", "Ranged Weapons"],
+    "validSlots": ["Ranged Weapons"],
     "maxValue": "8%"
   },
   "Improved Damage vs Elites and Bosses (Davidic)": {
