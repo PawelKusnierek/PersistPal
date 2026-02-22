@@ -35,6 +35,9 @@ function enable_default_tabs() {
   else if (location.href.split("/").slice(-1).includes('beginners-and-faq')) {
     initial_show_tab("Beginners")
   }
+  else if (location.href.split("/").slice(-1).includes('about')) {
+    initial_show_tab("About")
+  }
 }
 
 function show_tab(evt, tab_name) {
@@ -73,7 +76,6 @@ function initial_show_tab(tab_name) {
 }
 
 function enable_tablinks() {
-  // Enable all tablinks after page is fully loaded
   var tablinks = document.getElementsByClassName("tablinks");
   for (var i = 0; i < tablinks.length; i++) {
     tablinks[i].classList.add("enabled");
