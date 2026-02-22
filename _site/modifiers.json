@@ -19,6 +19,10 @@
     "validSlots": ["Head", "Chest"],
     "maxValue": "12%"
   },
+  "Less Stamina Costs for Weapon Actives (Disciplined)": {
+    "validSlots": ["Melee Weapons"],
+    "maxValue": "12%"
+  },
   "Lower chance of gaining Fire debuff (Fireproof)": {
     "validSlots": ["Pants"],
     "maxValue": "16%"
@@ -47,13 +51,17 @@
     "validSlots": ["Ranged Weapons"],
     "maxValue": "8%"
   },
-  "Chance to Block the Debuff Blind (Dauntless)": {
+  "Chance to Block the Debuff Blind (Watchful)": {
     "validSlots": ["Shoulders"],
     "maxValue": "28%"
   },
   "Increased Evasion Rating vs Non-Elite Zombies (Elusive)": {
     "validSlots": ["Chest"],
     "maxValue": "3000"
+  },
+  "Increased Damage vs Non-Elite Animals (Predator)": {
+    "validSlots": ["Chest"],
+    "maxValue": "8%"
   },
   "Improved Damage vs Elites and Bosses (Davidic)": {
     "validSlots": ["Gloves"],
@@ -62,5 +70,17 @@
   "Increased DR Rating vs Non-Elite NPCs (Ironclad)": {
     "validSlots": ["Pants"],
     "maxValue": "8%"
+  },
+  "Less Recoil for Ranged Weapons (Steady)": {
+    "validSlots": ["Gloves"],
+    "maxValue": "32%"
+  },
+  "Increased DR Rating vs Players (Hardened)": {
+    "validSlots": ["Pants"],
+    "maxValue": "3000"
+  },
+  "Improved Reload Speed (Swift)": {
+    "validSlots": ["Gloves", "Melee Weapons"],
+    "maxValue": "16%"
   }
 }
