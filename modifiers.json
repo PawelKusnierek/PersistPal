@@ -59,6 +59,10 @@
     "validSlots": ["Chest"],
     "maxValue": "3000"
   },
+  "Increased Evasion Rating vs Non-Elite Animals (Instinctive)": {
+    "validSlots": ["Pants"],
+    "maxValue": "3000"
+  },
   "Improved Damage vs Non-Elite Animals (Predator)": {
     "validSlots": ["Ranged Weapons"],
     "maxValue": "8%"
