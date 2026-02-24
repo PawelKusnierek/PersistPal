@@ -24,7 +24,7 @@
     "maxValue": "12%"
   },
   "Lower chance of gaining Fire debuff (Fireproof)": {
-    "validSlots": ["Pants"],
+    "validSlots": ["Pants", "Chest"],
     "maxValue": "16%"
   },
   "Lower chance of gaining Radiation debuff (Gamma-Shielded)": {
@@ -33,6 +33,14 @@
   },
   "Chance to ignore the Gain of Debuff Stun (Monolith)": {
     "validSlots": ["Boots"],
+    "maxValue": "28%"
+  },
+  "Chance to ignore the Gain of Debuff Confused (Composed)": {
+    "validSlots": ["Shoulders"],
+    "maxValue": "28%"
+  },
+  "Chance to ignore the Gain of the Debuff Disarmed (Unshakable)": {
+    "validSlots": ["Shoulders"],
     "maxValue": "28%"
   },
   "Less Durability Loss on this Item (Hardwearing)": {
@@ -48,11 +56,11 @@
     "maxValue": "3000"
   },
   "Improved Melee Attack Speed (Rapid)": {
-    "validSlots": ["Ranged Weapons"],
+    "validSlots": ["Ranged Weapons", "Gloves"],
     "maxValue": "8%"
   },
   "Chance to Block the Debuff Blind (Watchful)": {
-    "validSlots": ["Shoulders"],
+    "validSlots": ["Shoulders", "Boots"],
     "maxValue": "28%"
   },
   "Increased Evasion Rating vs Non-Elite Zombies (Elusive)": {
@@ -61,6 +69,10 @@
   },
   "Increased Evasion Rating vs Non-Elite Animals (Instinctive)": {
     "validSlots": ["Pants"],
+    "maxValue": "3000"
+  },
+  "Increased Evasion Rating vs Non-Elite Mutants (Adaptive)": {
+    "validSlots": ["Chest"],
     "maxValue": "3000"
   },
   "Improved Damage vs Non-Elite Animals (Predator)": {
@@ -72,7 +84,7 @@
     "maxValue": "8%"
   },
   "Increased DR Rating vs Non-Elite NPCs (Ironclad)": {
-    "validSlots": ["Pants"],
+    "validSlots": ["Pants", "Chest"],
     "maxValue": "3000"
   },
   "Increased DR Rating vs Non-Elite Zombies (Immune)": {
