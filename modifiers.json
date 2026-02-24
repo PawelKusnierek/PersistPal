@@ -27,6 +27,10 @@
     "validSlots": ["Pants", "Chest"],
     "maxValue": "16%"
   },
+  "Lower chance of gaining Lightning debuff (Earthed)": {
+    "validSlots": ["Chest"],
+    "maxValue": "16%"
+  },
   "Lower chance of gaining Radiation debuff (Gamma-Shielded)": {
     "validSlots": ["Head"],
     "maxValue": "16%"
@@ -61,6 +65,10 @@
   },
   "Chance to Block the Debuff Blind (Watchful)": {
     "validSlots": ["Shoulders", "Boots"],
+    "maxValue": "28%"
+  },
+  "Chance to Block the Debuff Bleeding (Impenetrable)": {
+    "validSlots": ["Boots"],
     "maxValue": "28%"
   },
   "Increased Evasion Rating vs Non-Elite Zombies (Elusive)": {
