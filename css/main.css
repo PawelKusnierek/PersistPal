@@ -911,6 +911,10 @@ ol, ul {
   background-color: #1c4b9b;
 }
 
+.profession-guide_tab button {
+  flex: 1 1 20%;
+}
+
 #guide-content > div {
   padding: 24px 20px 32px;
   display: none;

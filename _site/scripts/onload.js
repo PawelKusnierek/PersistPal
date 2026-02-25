@@ -23,20 +23,14 @@ function enable_expandable_div_buttons() {
 }
 
 function enable_default_tabs() {
-  if (location.href.split("/").slice(-1).includes('quests')) {
-    // Show Spoilers tab when present (e.g. cached/old build with tab structure)
-    if (document.getElementById("SpoilersTab")) {
-      initial_show_tab("SpoilersTab");
-    }
-  }
-  else if (location.href.split("/").slice(-1).includes('equipment')) {
-    initial_show_tab("Druid")
-  }
-  else if (location.href.split("/").slice(-1).includes('beginners-and-faq')) {
+  if (location.pathname.includes('beginners-and-faq')) {
     initial_show_tab("Beginners")
   }
-  else if (location.href.split("/").slice(-1).includes('about')) {
+  else if (location.pathname.includes('about')) {
     initial_show_tab("About")
+  }
+  else if (location.pathname.includes('profession')) {
+    initial_show_tab("Prof1")
   }
 }
 

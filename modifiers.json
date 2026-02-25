@@ -1,10 +1,10 @@
 {
-  "More Accuracy for Ranged Weapons (Accurate)": {
-    "validSlots": ["Ranged Weapons", "Gloves"],
+  "More Accuracy for Weapons (Accurate)": {
+    "validSlots": ["Weapons", "Gloves"],
     "maxValue": "32%"
   },
   "Improved Damage vs Non-Elite NPCs (Ruthless)": {
-    "validSlots": ["Melee Weapons"],
+    "validSlots": ["Weapons"],
     "maxValue": "8%"
   },
   "Less Durability Loss while Harvesting (Reinforced)": {
@@ -20,7 +20,7 @@
     "maxValue": "12%"
   },
   "Less Stamina Costs for Weapon Actives (Disciplined)": {
-    "validSlots": ["Melee Weapons"],
+    "validSlots": ["Weapons"],
     "maxValue": "12%"
   },
   "Lower chance of gaining Fire debuff (Fireproof)": {
@@ -36,7 +36,7 @@
     "maxValue": "16%"
   },
   "Chance to ignore the Gain of Debuff Stun (Monolith)": {
-    "validSlots": ["Boots"],
+    "validSlots": ["Boots", "Shoulders"],
     "maxValue": "28%"
   },
   "Chance to ignore the Gain of Debuff Confused (Composed)": {
@@ -52,7 +52,7 @@
     "maxValue": "32%"
   },
   "Improved Headshot Damage (Precise)": {
-    "validSlots": ["Ranged Weapons"],
+    "validSlots": ["Weapons"],
     "maxValue": "8%"
   },
   "Increased DR Rating vs Non-Elite Mutants (Antigen)": {
@@ -60,7 +60,7 @@
     "maxValue": "3000"
   },
   "Improved Melee Attack Speed (Rapid)": {
-    "validSlots": ["Ranged Weapons", "Gloves"],
+    "validSlots": ["Weapons", "Gloves"],
     "maxValue": "8%"
   },
   "Chance to Block the Debuff Blind (Watchful)": {
@@ -83,8 +83,12 @@
     "validSlots": ["Chest"],
     "maxValue": "3000"
   },
+  "Increased Evasion Rating vs Non-Elite NPCs (Deft)": {
+    "validSlots": ["Head"],
+    "maxValue": "3000"
+  },
   "Improved Damage vs Non-Elite Animals (Predator)": {
-    "validSlots": ["Ranged Weapons"],
+    "validSlots": ["Weapons"],
     "maxValue": "8%"
   },
   "Improved Damage vs Elites and Bosses (Davidic)": {
@@ -99,7 +103,7 @@
     "validSlots": ["Chest"],
     "maxValue": "3000"
   },
-  "Less Recoil for Ranged Weapons (Steady)": {
+  "Less Recoil for Weapons (Steady)": {
     "validSlots": ["Gloves"],
     "maxValue": "32%"
   },
@@ -108,7 +112,15 @@
     "maxValue": "3000"
   },
   "Improved Reload Speed (Swift)": {
-    "validSlots": ["Gloves", "Melee Weapons"],
+    "validSlots": ["Gloves", "Weapons"],
     "maxValue": "16%"
+  },
+  "Increases Stamina Regeneration (Refreshing)": {
+    "validSlots": ["Boots"],
+    "maxValue": "16%"
+  },
+  "Increases the Maximum Stamina (Vigorous)": {
+    "validSlots": ["Boots"],
+    "maxValue": "40"
   }
 }

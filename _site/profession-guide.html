@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PersistPal - Beginner's Guide</title>
+    <title>PersistPal - Profession Skilling Guide</title>
     <meta name="author" content="Pawel Kusnierek">
     <meta name="description"
     content="Tools and guides for Zombie MMORPG 'Persist Online'.">
@@ -16,7 +16,7 @@
     
 
     <!-- JavaScript -->
-    <script src="scripts/beginners_guide.js"></script>
+    
     <script src=/scripts/onload.js></script>
 
     <!-- Extra GoogleAPI fonts -->
@@ -71,13 +71,13 @@
         </div>
         
         <div class="nav-section">GUIDES / REFERENCES</div>
-        <div class="active nav-item"><a href="/beginners-and-faq">
+        <div class="nav-item"><a href="/beginners-and-faq">
                 <div class="nav-image-container"><img class="nav-image" src=/images/beginner.gif>Beginner's Guide & FAQ</div></a>
         </div>
         <div class="nav-item"><a href="/quests">
                 <div class="nav-image-container"><img class="nav-image" src=/images/quests.png>Quest Spoilers</div></a>
         </div>
-        <div class="nav-item"><a href="/profession-guide">
+        <div class="active nav-item"><a href="/profession-guide">
                 <div class="nav-image-container"><img class="nav-image" src=/images/shovel.gif>Profession Skilling Guide</div></a>
         </div>
         <div class="nav-item"><a href="/modifiers">
@@ -100,231 +100,286 @@
     <button class="nav-toggle" onclick="toggleNavigation()" style="display: none;">☰ Menu</button>
     
     <section id="main-content">
-    <div class="guide_tab">
-    <button class="tablinks active" onclick="show_tab(event, 'Beginners')">Beginner's Guide</button>
-    <button class="tablinks" onclick="show_tab(event, 'Weapons')">Weapon Types</button>
-    <button class="tablinks" onclick="show_tab(event, 'Safehouse')">Safehouse & Crafting</button>
-    <button class="tablinks" onclick="show_tab(event, 'Professions')">Professions</button>
-    <button class="tablinks" onclick="show_tab(event, 'Factions')">Factions</button>
-    <button class="tablinks" onclick="show_tab(event, 'Enemies')">Enemy Types</button>
-    <button class="tablinks" onclick="show_tab(event, 'Nodes')">Nodes</button>
-    <button class="tablinks" onclick="show_tab(event, 'Endgame')">Endgame</button>
-
+    <div class="guide_tab profession-guide_tab">
+    <button class="tablinks active" onclick="show_tab(event, 'Prof1')">Botany</button>
+    <button class="tablinks" onclick="show_tab(event, 'Prof2')">Construction</button>
+    <button class="tablinks" onclick="show_tab(event, 'Prof3')">Electronics</button>
+    <button class="tablinks" onclick="show_tab(event, 'Prof4')">Fishing</button>
+    <button class="tablinks" onclick="show_tab(event, 'Prof5')">Hunting</button>
+    <button class="tablinks" onclick="show_tab(event, 'Prof6')">Mechanics</button>
+    <button class="tablinks" onclick="show_tab(event, 'Prof7')">Mining</button>
+    <button class="tablinks" onclick="show_tab(event, 'Prof8')">Street Smarts</button>
+    <button class="tablinks" onclick="show_tab(event, 'Prof9')">Thievery</button>
+    <button class="tablinks" onclick="show_tab(event, 'Prof10')">Woodworking</button>
 </div>
 
 <div id="guide-content">
-    <div id="Beginners" class="tabcontent">
+    <div id="Prof1" class="tabcontent">
         <details class="expandable-section">
-            <summary>What is Persist Online?</summary>
+            <summary>Poor</summary>
             <div class="expandable-section_body">
-                <p>WIP</p>
+                <p>Content for Poor tier — WIP</p>
             </div>
         </details>
         <details class="expandable-section">
-            <summary>First Few Hours</summary>
+            <summary>Uncommon</summary>
             <div class="expandable-section_body">
-                <p>I recommend grinding for level 4 while doing the initial 'Humble Beginnings' quest for Eli Dawson, so that when you get back to Junction, you can pick up the first two sets of quests together.</p>
-            </div>
-        </details>
-    </div>
-
-    <div id="Weapons" class="tabcontent">
-        <details class="expandable-section">
-            <summary>Weapons Overview</summary>
-            <div class="expandable-section_body">
-                <p>WIP</p>
+                <p>Content for Uncommon tier — WIP</p>
             </div>
         </details>
         <details class="expandable-section">
-            <summary>Ranged - Assault Rifle</summary>
+            <summary>Good</summary>
             <div class="expandable-section_body">
-                <p>WIP</p>
+                <p>Content for Good tier — WIP</p>
             </div>
         </details>
         <details class="expandable-section">
-            <summary>Ranged - Sniper Gun</summary>
+            <summary>Remarkable</summary>
             <div class="expandable-section_body">
-                <p>WIP</p>
-            </div>
-        </details>
-        <details class="expandable-section">
-            <summary>Ranged - Machine Gun</summary>
-            <div class="expandable-section_body">
-                <p>WIP</p>
-            </div>
-        </details>
-        <details class="expandable-section">
-            <summary>Ranged - Submachine Gun</summary>
-            <div class="expandable-section_body">
-                <p>WIP</p>
-            </div>
-        </details>
-        <details class="expandable-section">
-            <summary>Ranged - Shotgun</summary>
-            <div class="expandable-section_body">
-                <p>WIP</p>
-            </div>
-        </details>
-        <details class="expandable-section">
-            <summary>Ranged - Pistol</summary>
-            <div class="expandable-section_body">
-                <p>WIP</p>
-            </div>
-        </details>
-        <details class="expandable-section">
-            <summary>Ranged - Revolver</summary>
-            <div class="expandable-section_body">
-                <p>WIP</p>
-            </div>
-        </details>
-        <details class="expandable-section">
-            <summary>Melee - Axe</summary>
-            <div class="expandable-section_body">
-                <p>WIP</p>
-            </div>
-        </details>
-        <details class="expandable-section">
-            <summary>Melee - Sword</summary>
-            <div class="expandable-section_body">
-                <p>WIP</p>
-            </div>
-        </details>
-        <details class="expandable-section">
-            <summary>Melee - Hammer</summary>
-            <div class="expandable-section_body">
-                <p>WIP</p>
-            </div>
-        </details>
-        <details class="expandable-section">
-            <summary>Melee - Knife</summary>
-            <div class="expandable-section_body">
-                <p>WIP</p>
+                <p>Content for Remarkable tier — WIP</p>
             </div>
         </details>
     </div>
 
-    <div id="Safehouse" class="tabcontent">
+    <div id="Prof2" class="tabcontent">
         <details class="expandable-section">
-            <summary>Safehouse Overview</summary>
+            <summary>Poor</summary>
             <div class="expandable-section_body">
-                <p>WIP</p>
+                <p>Content for Poor tier — WIP</p>
             </div>
         </details>
         <details class="expandable-section">
-            <summary>Crafting</summary>
+            <summary>Uncommon</summary>
             <div class="expandable-section_body">
-                <p>WIP</p>
+                <p>Content for Uncommon tier — WIP</p>
             </div>
         </details>
         <details class="expandable-section">
-            <summary>Which rooms to upgrade first?</summary>
+            <summary>Good</summary>
             <div class="expandable-section_body">
-                <p>WIP</p>
+                <p>Content for Good tier — WIP</p>
             </div>
         </details>
-    </div>
-
-    <div id="Professions" class="tabcontent">
         <details class="expandable-section">
-            <summary>Professions Overview</summary>
+            <summary>Remarkable</summary>
             <div class="expandable-section_body">
-                <p>WIP</p>
+                <p>Content for Remarkable tier — WIP</p>
             </div>
         </details>
     </div>
 
-    <div id="Factions" class="tabcontent">
+    <div id="Prof3" class="tabcontent">
         <details class="expandable-section">
-            <summary>Factions overview</summary>
+            <summary>Poor</summary>
             <div class="expandable-section_body">
-                <p>WIP</p>
+                <p>Content for Poor tier — WIP</p>
             </div>
         </details>
         <details class="expandable-section">
-            <summary>The Enclave</summary>
+            <summary>Uncommon</summary>
             <div class="expandable-section_body">
-                <p>WIP</p>
+                <p>Content for Uncommon tier — WIP</p>
             </div>
         </details>
         <details class="expandable-section">
-            <summary>Legacy & The Thatcher Cooperative</summary>
+            <summary>Good</summary>
             <div class="expandable-section_body">
-                <p>WIP</p>
+                <p>Content for Good tier — WIP</p>
             </div>
         </details>
         <details class="expandable-section">
-            <summary>Raiders</summary>
+            <summary>Remarkable</summary>
             <div class="expandable-section_body">
-                <p>WIP</p>
-            </div>
-        </details>
-        <details class="expandable-section">
-            <summary>Survivors</summary>
-            <div class="expandable-section_body">
-                <p>WIP</p>
-            </div>
-        </details>
-        <details class="expandable-section">
-            <summary>The Black Hand</summary>
-            <div class="expandable-section_body">
-                <p>WIP</p>
+                <p>Content for Remarkable tier — WIP</p>
             </div>
         </details>
     </div>
 
-    <div id="Enemies" class="tabcontent">
+    <div id="Prof4" class="tabcontent">
         <details class="expandable-section">
-            <summary>Zombies</summary>
+            <summary>Poor</summary>
             <div class="expandable-section_body">
-                <p>WIP</p>
+                <p>Content for Poor tier — WIP</p>
             </div>
         </details>
         <details class="expandable-section">
-            <summary>Mutants</summary>
+            <summary>Uncommon</summary>
             <div class="expandable-section_body">
-                <p>WIP</p>
+                <p>Content for Uncommon tier — WIP</p>
             </div>
         </details>
         <details class="expandable-section">
-            <summary>Animals</summary>
+            <summary>Good</summary>
             <div class="expandable-section_body">
-                <p>WIP</p>
+                <p>Content for Good tier — WIP</p>
             </div>
         </details>
         <details class="expandable-section">
-            <summary>NPCs</summary>
+            <summary>Remarkable</summary>
             <div class="expandable-section_body">
-                <p>WIP</p>
-            </div>
-        </details>
-        <details class="expandable-section">
-            <summary>Elites</summary>
-            <div class="expandable-section_body">
-                <p>WIP</p>
-            </div>
-        </details>
-        <details class="expandable-section">
-            <summary>Bosses</summary>
-            <div class="expandable-section_body">
-                <p>WIP</p>
+                <p>Content for Remarkable tier — WIP</p>
             </div>
         </details>
     </div>
 
-    <div id="Nodes" class="tabcontent">
+    <div id="Prof5" class="tabcontent">
         <details class="expandable-section">
-            <summary>What are Nodes?</summary>
+            <summary>Poor</summary>
             <div class="expandable-section_body">
-                <p>WIP</p>
+                <p>Content for Poor tier — WIP</p>
+            </div>
+        </details>
+        <details class="expandable-section">
+            <summary>Uncommon</summary>
+            <div class="expandable-section_body">
+                <p>Content for Uncommon tier — WIP</p>
+            </div>
+        </details>
+        <details class="expandable-section">
+            <summary>Good</summary>
+            <div class="expandable-section_body">
+                <p>Content for Good tier — WIP</p>
+            </div>
+        </details>
+        <details class="expandable-section">
+            <summary>Remarkable</summary>
+            <div class="expandable-section_body">
+                <p>Content for Remarkable tier — WIP</p>
             </div>
         </details>
     </div>
 
-    <div id="Endgame" class="tabcontent">
+    <div id="Prof6" class="tabcontent">
         <details class="expandable-section">
-            <summary>Endgame activities</summary>
+            <summary>Poor</summary>
             <div class="expandable-section_body">
-                <p>WIP</p>
+                <p>Content for Poor tier — WIP</p>
+            </div>
+        </details>
+        <details class="expandable-section">
+            <summary>Uncommon</summary>
+            <div class="expandable-section_body">
+                <p>Content for Uncommon tier — WIP</p>
+            </div>
+        </details>
+        <details class="expandable-section">
+            <summary>Good</summary>
+            <div class="expandable-section_body">
+                <p>Content for Good tier — WIP</p>
+            </div>
+        </details>
+        <details class="expandable-section">
+            <summary>Remarkable</summary>
+            <div class="expandable-section_body">
+                <p>Content for Remarkable tier — WIP</p>
+            </div>
+        </details>
+    </div>
+
+    <div id="Prof7" class="tabcontent">
+        <details class="expandable-section">
+            <summary>Poor</summary>
+            <div class="expandable-section_body">
+                <p>Content for Poor tier — WIP</p>
+            </div>
+        </details>
+        <details class="expandable-section">
+            <summary>Uncommon</summary>
+            <div class="expandable-section_body">
+                <p>Content for Uncommon tier — WIP</p>
+            </div>
+        </details>
+        <details class="expandable-section">
+            <summary>Good</summary>
+            <div class="expandable-section_body">
+                <p>Content for Good tier — WIP</p>
+            </div>
+        </details>
+        <details class="expandable-section">
+            <summary>Remarkable</summary>
+            <div class="expandable-section_body">
+                <p>Content for Remarkable tier — WIP</p>
+            </div>
+        </details>
+    </div>
+
+    <div id="Prof8" class="tabcontent">
+        <details class="expandable-section">
+            <summary>Poor</summary>
+            <div class="expandable-section_body">
+                <p>Content for Poor tier — WIP</p>
+            </div>
+        </details>
+        <details class="expandable-section">
+            <summary>Uncommon</summary>
+            <div class="expandable-section_body">
+                <p>Content for Uncommon tier — WIP</p>
+            </div>
+        </details>
+        <details class="expandable-section">
+            <summary>Good</summary>
+            <div class="expandable-section_body">
+                <p>Content for Good tier — WIP</p>
+            </div>
+        </details>
+        <details class="expandable-section">
+            <summary>Remarkable</summary>
+            <div class="expandable-section_body">
+                <p>Content for Remarkable tier — WIP</p>
+            </div>
+        </details>
+    </div>
+
+    <div id="Prof9" class="tabcontent">
+        <details class="expandable-section">
+            <summary>Poor</summary>
+            <div class="expandable-section_body">
+                <p>Content for Poor tier — WIP</p>
+            </div>
+        </details>
+        <details class="expandable-section">
+            <summary>Uncommon</summary>
+            <div class="expandable-section_body">
+                <p>Content for Uncommon tier — WIP</p>
+            </div>
+        </details>
+        <details class="expandable-section">
+            <summary>Good</summary>
+            <div class="expandable-section_body">
+                <p>Content for Good tier — WIP</p>
+            </div>
+        </details>
+        <details class="expandable-section">
+            <summary>Remarkable</summary>
+            <div class="expandable-section_body">
+                <p>Content for Remarkable tier — WIP</p>
+            </div>
+        </details>
+    </div>
+
+    <div id="Prof10" class="tabcontent">
+        <details class="expandable-section">
+            <summary>Poor</summary>
+            <div class="expandable-section_body">
+                <p>Content for Poor tier — WIP</p>
+            </div>
+        </details>
+        <details class="expandable-section">
+            <summary>Uncommon</summary>
+            <div class="expandable-section_body">
+                <p>Content for Uncommon tier — WIP</p>
+            </div>
+        </details>
+        <details class="expandable-section">
+            <summary>Good</summary>
+            <div class="expandable-section_body">
+                <p>Content for Good tier — WIP</p>
+            </div>
+        </details>
+        <details class="expandable-section">
+            <summary>Remarkable</summary>
+            <div class="expandable-section_body">
+                <p>Content for Remarkable tier — WIP</p>
             </div>
         </details>
     </div>
