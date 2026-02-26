@@ -39,6 +39,10 @@
     "validSlots": ["Boots", "Shoulders"],
     "maxValue": "28%"
   },
+  "Chance to ignore the Gain of Debuff Vulnerable (Unyielding)": {
+    "validSlots": ["Shoulders", "Wrists"],
+    "maxValue": "28%"
+  },
   "Chance to ignore the Gain of Debuff Confused (Composed)": {
     "validSlots": ["Shoulders"],
     "maxValue": "28%"
@@ -84,7 +88,7 @@
     "maxValue": "3000"
   },
   "Increased Evasion Rating vs Non-Elite NPCs (Deft)": {
-    "validSlots": ["Head"],
+    "validSlots": ["Head", "Pants"],
     "maxValue": "3000"
   },
   "Improved Damage vs Non-Elite Animals (Predator)": {
@@ -122,5 +126,13 @@
   "Increases the Maximum Stamina (Vigorous)": {
     "validSlots": ["Boots"],
     "maxValue": "40"
+  },
+  "Lower Cooldown for Weapon Actives (Rampant)": {
+    "validSlots": ["Gloves"],
+    "maxValue": "12%"
+  },
+  "Improved Crit Damage (Lethal)": {
+    "validSlots": ["Gloves"],
+    "maxValue": "12%"
   }
 }
