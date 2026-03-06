@@ -7,6 +7,10 @@
     "validSlots": ["Weapons"],
     "maxValue": "8%"
   },
+  "Improved Damage vs Non-Elite Zombies (Necrotic)": {
+    "validSlots": ["Weapons"],
+    "maxValue": "8%"
+  },
   "Less Durability Loss while Harvesting (Reinforced)": {
     "validSlots": ["Wrists"],
     "maxValue": "20%"
@@ -25,6 +29,10 @@
   },
   "Lower chance of gaining Fire debuff (Fireproof)": {
     "validSlots": ["Pants", "Chest"],
+    "maxValue": "16%"
+  },
+  "Lower chance of gaining Acid debuff (PTFE-Coated)": {
+    "validSlots": ["Pants"],
     "maxValue": "16%"
   },
   "Lower chance of gaining Lightning debuff (Earthed)": {
@@ -51,8 +59,20 @@
     "validSlots": ["Shoulders"],
     "maxValue": "28%"
   },
+  "Chance to ignore the Gain of the Debuff Poison (Filtered)": {
+    "validSlots": ["Shoulders"],
+    "maxValue": "28%"
+  },
+  "Chance to ignore the Gain of the Debuff Crippled (Bolstered)": {
+    "validSlots": ["Boots"],
+    "maxValue": "28%"
+  },
   "Less Durability Loss on this Item (Hardwearing)": {
     "validSlots": ["Chest"],
+    "maxValue": "32%"
+  },
+  "Less Durability Loss on this Item (Robust)": {
+    "validSlots": ["Weapons"],
     "maxValue": "32%"
   },
   "Improved Headshot Damage (Precise)": {
@@ -72,7 +92,7 @@
     "maxValue": "28%"
   },
   "Chance to Block the Debuff Bleeding (Impenetrable)": {
-    "validSlots": ["Boots"],
+    "validSlots": ["Boots", "Shoulders"],
     "maxValue": "28%"
   },
   "Increased Evasion Rating vs Non-Elite Zombies (Elusive)": {
@@ -80,7 +100,7 @@
     "maxValue": "3000"
   },
   "Increased Evasion Rating vs Non-Elite Animals (Instinctive)": {
-    "validSlots": ["Pants"],
+    "validSlots": ["Pants", "Head"],
     "maxValue": "3000"
   },
   "Increased Evasion Rating vs Non-Elite Mutants (Adaptive)": {
@@ -88,7 +108,7 @@
     "maxValue": "3000"
   },
   "Increased Evasion Rating vs Non-Elite NPCs (Deft)": {
-    "validSlots": ["Head", "Pants"],
+    "validSlots": ["Head", "Pants", "Chest"],
     "maxValue": "3000"
   },
   "Improved Damage vs Non-Elite Animals (Predator)": {
@@ -101,6 +121,10 @@
   },
   "Increased DR Rating vs Non-Elite NPCs (Ironclad)": {
     "validSlots": ["Pants", "Chest"],
+    "maxValue": "3000"
+  },
+  "Increased DR Rating vs Elites and Bosses (Dauntless)": {
+    "validSlots": ["Pants"],
     "maxValue": "3000"
   },
   "Increased DR Rating vs Non-Elite Zombies (Immune)": {
@@ -128,7 +152,7 @@
     "maxValue": "40"
   },
   "Lower Cooldown for Weapon Actives (Rampant)": {
-    "validSlots": ["Gloves"],
+    "validSlots": ["Gloves", "Weapons"],
     "maxValue": "12%"
   },
   "Improved Crit Damage (Lethal)": {
