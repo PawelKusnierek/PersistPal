@@ -52,7 +52,7 @@
     "maxValue": "28%"
   },
   "Chance to ignore the Gain of Debuff Confused (Composed)": {
-    "validSlots": ["Shoulders"],
+    "validSlots": ["Shoulders", "Boots"],
     "maxValue": "28%"
   },
   "Chance to ignore the Gain of the Debuff Disarmed (Unshakable)": {
